@@ -1,0 +1,79 @@
+POST http://localhost:3000/register
+Content-Type: application/json
+
+{
+    "userType": "Admin",
+    "fullName": "Ahmed Abdelsalam",
+    "gender": "Male",
+    "email": "ahmed@gmail.com",
+    "password": "password"
+}
+
+###
+
+
+POST http://localhost:3000/register
+Content-Type: application/json
+
+{
+    "userType": "Doctor",
+    "fullName": "Asmaa Abdelsalam",
+    "gender": "Female",
+    "email": "asmaa@gmail.com",
+    "password": "password"
+}
+
+###
+
+
+POST http://localhost:3000/register
+Content-Type: application/json
+
+{
+    "userType": "Patient",
+    "fullName": "Amr Abdelsalam",
+    "gender": "Male",
+    "email": "amr@gmail.com",
+    "password": "password"
+}
+
+###
+
+POST http://localhost:3000/login
+Content-Type: application/json
+
+{
+  "userType": "Patient",
+  "email": "amr@gmail.com",
+  "password": "password"
+}
+
+###
+
+GET http://localhost:3000/doctors
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7fSwiaWF0IjoxNjY0NzEzNDQxLCJleHAiOjE2NjQ3MTM3NDF9.6bBMRliq39NdEdXHVLmhzrIpFftRVL8G22pL4gG5_EA
+
+
+###
+
+GET http://localhost:3000/doctors/6339856d82027544dce664cc
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7fSwiaWF0IjoxNjY0NzEzNDQxLCJleHAiOjE2NjQ3MTM3NDF9.6bBMRliq39NdEdXHVLmhzrIpFftRVL8G22pL4gG5_EA
+
+
+###
+
+DELETE http://localhost:3000/logout
+Content-Type: application/json
+
+{
+  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Il9pZCI6IjYzMzk4MjNmYmMwYjUzMDM5MWVlZTk4NyIsInVzZXJUeXBlIjoiQWRtaW4iLCJmdWxsTmFtZSI6IkFobWVkIEFiZGVsc2FsYW0iLCJnZW5kZXIiOiJNYWxlIiwiZW1haWwiOiJhaG1lZEBnbWFpbC5jb20iLCJwYXNzd29yZCI6IiQyYiQxMCRzVVBORC9qYjJSRUVRMlh3eGYuNzQuNlFUMGMzZmh6WElzRndQM05rWGtLQnBTR1FsUkZLUyIsIl9fdiI6MH0sImlhdCI6MTY2NDcxMzQyMn0.Dshs_hTgrRLsp6VjLCO7U3CdXN6KBclQ6GZ3hAg8B6I"
+}
+
+###
+
+POST http://localhost:3000/token
+Content-Type: application/json
+
+{
+  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Il9pZCI6IjYzMzk4MjNmYmMwYjUzMDM5MWVlZTk4NyIsInVzZXJUeXBlIjoiQWRtaW4iLCJmdWxsTmFtZSI6IkFobWVkIEFiZGVsc2FsYW0iLCJnZW5kZXIiOiJNYWxlIiwiZW1haWwiOiJhaG1lZEBnbWFpbC5jb20iLCJwYXNzd29yZCI6IiQyYiQxMCRzVVBORC9qYjJSRUVRMlh3eGYuNzQuNlFUMGMzZmh6WElzRndQM05rWGtLQnBTR1FsUkZLUyIsIl9fdiI6MH0sImlhdCI6MTY2NDcxMzQyMn0.Dshs_hTgrRLsp6VjLCO7U3CdXN6KBclQ6GZ3hAg8B6I"
+}
